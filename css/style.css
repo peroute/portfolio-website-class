@@ -5,17 +5,21 @@ body {
   line-height: 1.5;
 }
 
-body > *:not(.site-header):not(.site-footer) {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 /* ===== Layout ===== */
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.alt-bg {
+  background-color: #f5f8ff;
 }
 
 /* ===== Site Header ===== */
@@ -169,6 +173,137 @@ a {
 .btn-outline:hover {
   background-color: #2f6fed;
   color: #ffffff;
+}
+
+/* ===== Hero ===== */
+
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2f6fed;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.hero-heading {
+  margin: 0;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  color: #555555;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* ===== About ===== */
+
+.about {
+  padding: 50px 0;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-card {
+  flex: 1 1 220px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.about-card h3 {
+  margin-top: 0;
+  color: #2f6fed;
+}
+
+.about-card p {
+  margin-bottom: 0;
+}
+
+/* ===== Skills ===== */
+
+.skills {
+  padding: 50px 0;
+}
+
+.skills-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: #2f6fed;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* ===== Contact ===== */
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact-box {
+  max-width: 500px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.contact-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links li + li {
+  margin-top: 8px;
+}
+
+.contact-links a {
+  color: #2f6fed;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
 }
 
 /* ===== Site Footer ===== */
