@@ -2,7 +2,14 @@
 
 A personal portfolio site built with plain HTML and CSS — no frameworks, no build step, no JavaScript (the mobile nav menu uses a pure-CSS checkbox toggle).
 
-🔗 **Live Demo:** [peroute.github.io/portfolio-website-class](https://peroute.github.io/portfolio-website-class/)
+🔗 **Live Demo (GitHub Pages):** [peroute.github.io/portfolio-website-class](https://peroute.github.io/portfolio-website-class/)
+
+## 🛠️ Technologies Used
+
+- **HTML5** — page structure and content (`index.html`, `projects.html`, `cv.html`)
+- **CSS3** — all styling and layout, including Flexbox and a pure-CSS (checkbox-hack) mobile nav toggle — no JavaScript anywhere on the site
+- **Git & GitHub** — version control
+- **GitHub Pages** — hosting / deployment
 
 ## 📁 Structure
 
@@ -43,6 +50,7 @@ portfolio-website-class/
 - Replace `images/profile.jpg` with your own photo — it's used as the background image of the hero `.avatar-circle`.
 - Replace `files/CV.pdf` with your own resume — it's linked from the nav's CV page and the homepage's "Download CV" button.
 
-## 🚀 Running locally
+## 👀 Viewing the Project
 
-Just open `index.html` in your browser — no build step or dependencies required.
+- **Online:** visit the live GitHub Pages link above — [peroute.github.io/portfolio-website-class](https://peroute.github.io/portfolio-website-class/).
+- **Locally:** clone or download this repo, then just open `index.html` in your browser — no build step or dependencies required.

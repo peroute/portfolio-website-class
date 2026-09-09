@@ -224,29 +224,6 @@ a {
   padding: 50px 0;
 }
 
-.about-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.about-card {
-  flex: 1 1 220px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 6px;
-  padding: 20px;
-}
-
-.about-card h3 {
-  margin-top: 0;
-  color: #2f6fed;
-}
-
-.about-card p {
-  margin-bottom: 0;
-}
-
 /* ===== Skills ===== */
 
 .skills {
