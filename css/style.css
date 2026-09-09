@@ -10,6 +10,14 @@ body > *:not(.site-header):not(.site-footer) {
   margin-right: 20px;
 }
 
+/* ===== Layout ===== */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* ===== Site Header ===== */
 
 .site-header {
@@ -18,24 +26,23 @@ body > *:not(.site-header):not(.site-footer) {
   margin-bottom: 20px;
 }
 
-.site-header__inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 15px 20px;
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.site-logo {
+.logo {
   font-size: 1.3em;
   font-weight: bold;
   color: #2f6fed;
   text-decoration: none;
 }
 
-/* Nav toggle checkbox (hidden, driven by the label) */
+/* Nav toggle checkbox hack (no JS) */
 .nav-toggle {
   position: absolute;
   opacity: 0;
@@ -59,43 +66,43 @@ body > *:not(.site-header):not(.site-footer) {
   border-radius: 2px;
 }
 
-.site-nav ul {
+.nav-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.site-nav a {
+.nav-links a:not(.btn) {
   text-decoration: none;
   color: #222222;
 }
 
-.site-nav a:hover {
+.nav-links a:not(.btn):hover {
   color: #2f6fed;
 }
 
 /* Mobile: collapsible menu driven by the checkbox */
 @media (max-width: 600px) {
-  .site-header__inner {
+  .navbar {
     flex-wrap: wrap;
   }
 
-  .site-nav {
+  .navbar .nav-links {
     display: none;
     width: 100%;
     order: 3;
   }
 
-  .site-nav ul {
+  .navbar .nav-links ul {
     flex-direction: column;
     padding-top: 15px;
   }
 
-  .site-nav li + li {
+  .navbar .nav-links li + li {
     margin-top: 10px;
   }
 
-  .nav-toggle:checked ~ .site-nav {
+  .nav-toggle:checked ~ .nav-links {
     display: block;
   }
 }
@@ -106,8 +113,9 @@ body > *:not(.site-header):not(.site-footer) {
     display: none;
   }
 
-  .site-nav ul {
+  .navbar .nav-links ul {
     display: flex;
+    align-items: center;
     gap: 20px;
   }
 }
@@ -126,6 +134,43 @@ a {
   color: #2f6fed;
 }
 
+/* ===== Buttons ===== */
+
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2f6fed;
+  color: #ffffff;
+  border-color: #2f6fed;
+}
+
+.btn-primary:hover {
+  background-color: #1d54c9;
+  border-color: #1d54c9;
+  color: #ffffff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #2f6fed;
+  border-color: #2f6fed;
+}
+
+.btn-outline:hover {
+  background-color: #2f6fed;
+  color: #ffffff;
+}
+
 /* ===== Site Footer ===== */
 
 .site-footer {
@@ -134,10 +179,9 @@ a {
   margin-top: 40px;
 }
 
-.site-footer__inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+.site-footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,21 +189,22 @@ a {
   text-align: center;
 }
 
-.site-footer__links {
+.footer-links {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.site-footer__links a {
+.footer-links a:not(.btn) {
   text-decoration: none;
   color: #222222;
 }
 
-.site-footer__links a:hover {
+.footer-links a:not(.btn):hover {
   color: #2f6fed;
 }
 
-.site-footer__copyright {
+.footer-copyright {
   margin: 0;
   font-size: 0.9em;
   color: #666666;
