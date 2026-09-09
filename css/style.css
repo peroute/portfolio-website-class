@@ -374,6 +374,78 @@ a {
   margin-top: 8px;
 }
 
+/* ===== CV ===== */
+
+.cv-header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cv-header h1 {
+  margin: 0 0 10px;
+}
+
+.cv-header .hero-tagline {
+  margin: 0 0 20px;
+}
+
+.cv-block {
+  padding: 50px 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #2f6fed;
+}
+
+.timeline-item + .timeline-item {
+  margin-top: 25px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2f6fed;
+}
+
+.timeline-item h3 {
+  margin: 0 0 5px;
+  color: #2f6fed;
+}
+
+.timeline-item p {
+  margin: 0 0 5px;
+}
+
+.timeline-item p:last-child {
+  margin-bottom: 0;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-card {
+  flex: 1 1 220px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: #2f6fed;
+}
+
 /* ===== Site Footer ===== */
 
 .site-footer {
