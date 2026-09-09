@@ -5,7 +5,7 @@ body {
   line-height: 1.5;
 }
 
-body > *:not(.site-header) {
+body > *:not(.site-header):not(.site-footer) {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -124,4 +124,43 @@ h2 {
 
 a {
   color: #2f6fed;
+}
+
+/* ===== Site Footer ===== */
+
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  margin-top: 40px;
+}
+
+.site-footer__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: 20px;
+}
+
+.site-footer__links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.site-footer__links a:hover {
+  color: #2f6fed;
+}
+
+.site-footer__copyright {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666666;
 }
